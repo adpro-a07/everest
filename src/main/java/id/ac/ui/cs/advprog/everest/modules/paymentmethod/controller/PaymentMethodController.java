@@ -25,7 +25,6 @@ public class PaymentMethodController {
         this.paymentMethodService = paymentMethodService;
     }
 
-
     @PostMapping
     public ResponseEntity<GenericResponse<PaymentMethodDetailDto>> createPaymentMethod(
             @Valid @RequestBody CreateAndUpdatePaymentMethodRequest request
